@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaaSsemble Event</title>
+    <link rel="stylesheet" href="events-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav-links">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhuVD-aAXmVWYxOvek56TJM3iuRq2UumswEA&s" alt="PaaSsemble Logo"/>
+                <span>PaaSsemble</span>
+            </div>
+            <ul>
+                <li><a href="home-index.html">HOME</a></li>
+                <li><a href="home-index.html#about">ABOUT US</a></li>
+                <li><a href="home-index.html#events">EVENTS</a></li> <!-- New Link -->
+                <li><a href="home-index.html#dept">DEPARTMENTS</a></li> <!-- New Link -->
+                <li><a href="home-index.html#clubs">CLUBS</a></li> <!-- New Link -->
+                <li><a href="home-index.html#contact">CONTACT US</a></li>
+                <li><a href="login-page.html">LOGIN/SIGNUP</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Animated Name Section -->
+    <section id="name-section">
+        <div class="name-background">
+            <h1 class="animated-name"></h1>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2 class="events-title">Upcoming Events</h2>
+        <div class="events-container">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <div class="event-date">
+                    <span>20</span>
+                    <span>December</span>
+                </div>
+                <img src="https://i.ibb.co/942YV9Q/wallpaperflare-com-wallpaper.jpg" alt="Event Image">
+                <h3>Event Show: TechQuest</h3>
+                <p>A technical quiz competition focusing on engineering concepts, current technologies, and general tech knowledge. Teams compete to answer a series of challenging questions.</p>
+                <div class="event-tags">
+                    <span>Technical Event</span>
+                </div>
+                <p class="prize-info">Prize Pool: Coming soon!</p>
+                <button class="ticket-status"><a href="register.html">REGISTER</a></button>
+                <button class="ticket-status">
+                    <a href="techquestindex.html">EVENT DETAILS</a>
+                  </button>
+
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <div class="event-date">
+                    <span>25</span>
+                    <span>December</span>
+                </div>
+                <img src="https://i.ibb.co/942YV9Q/wallpaperflare-com-wallpaper.jpg" alt="Event Image">
+                <h3>Event Show: CodeCraze Hackathon</h3>
+                <p>A 24-hour hackathon where participants solve real-world problems by developing software or hardware prototypes.</p>
+                <div class="event-tags">
+                    <span>Technical Event</span>
+                </div>
+                <p class="prize-info">Prize Pool: Coming soon!</p>
+                <button class="ticket-status"><a href="register.html">REGISTER</a></button>
+                <button class="ticket-status">
+                    <a href="codehackathonindex.html">EVENT DETAILS</a>
+                  </button>
+               
+            </div>
+        </div>
+
+        <div class="view-all-events">
+            <a href="allevents-index.html" class="view-all-btn">VIEW ALL EVENTS</a>
+        </div>
+    </section>
+
+    <script src="events-script.js"></script>
+</body>
+</html>

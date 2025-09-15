@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Payment Gateway</title>
+  <link rel="stylesheet" href="paymentstyles.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Secure Payment Gateway</h1>
+    <label for="payment-method">Choose Payment Method:</label>
+    <select id="payment-method">
+      <option value="">-- Select --</option>
+      <option value="upi">UPI</option>
+      <option value="cash">Cash</option>
+    </select>
+<!-- UPI Details Section (hidden by default) -->
+<div class="upi-details" id="upi-details" style="display: none;">
+  <label for="amount">Amount:</label>
+  <input type="number" id="amount" value="10" disabled />
+  <button class="pay-button" id="pay-now">Pay Now</button>
+</div>
+
+<!-- QR Code Section (hidden by default) -->
+<div id="qr-code-container" style="display: none;">
+  <h3>Scan this QR Code to complete payment:</h3>
+  <img id="upi-qr-code" src="" alt="QR Code will appear here">
+</div>
+
+<!-- Payment Status Section -->
+<div id="payment-status-container" style="margin-top: 20px;">
+  <!--<h3>Payment Status:</h3>-->
+</div>
+</div>
+     <script src="paymentscript.js"></script>
+</body>
+</html>

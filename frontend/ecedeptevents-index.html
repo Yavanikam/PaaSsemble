@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECE Department Events - PaaSsemble</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ecedeptevents-styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+  <header class="nav-bar">
+    <nav class="nav-links">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhuVD-aAXmVWYxOvek56TJM3iuRq2UumswEA&s" alt="PaaSsemble Logo"/>
+            <span>PaaSsemble</span>
+        </div>
+        <ul>
+            <li><a href="home-index.html">HOME</a></li>
+            <li><a href="home-index.html#about">ABOUT US</a></li>
+            <li><a href="home-index.html#events">EVENTS</a></li> <!-- New Link -->
+            <li><a href="home-index.html#dept">DEPARTMENTS</a></li> <!-- New Link -->
+            <li><a href="home-index.html#clubs">CLUBS</a></li> <!-- New Link -->
+            <li><a href="home-index.html#contact">CONTACT US</a></li>
+            <li><a href="login-page.html">LOGIN/SIGNUP</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="bg-[#22333b] text-[#eae0d5]">
+  <section class="bg-[#0a0908] text-white py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">ECE Department Events</h1>
+      <p class="mt-2 text-[#c6ac8f]">Explore events, workshops, and more in the ECE department</p>
+    </div>
+  </section>
+
+  <main class="container mx-auto py-10" id="event-container">
+    <section class="flex flex-col items-center" id="cse-events">
+      <!-- CSE Department Info - Initial Load -->
+      <div class="cse-info bg-[#eae0d5] shadow-lg rounded-lg p-8 text-[#0a0908] max-w-4xl">
+        <img src="https://via.placeholder.com/800x400" alt="CSE Department" class="w-full h-auto mb-6">
+        <h2 class="text-3xl font-semibold mb-4">Department of Electronics & communication Engineering</h2>
+        <p class="mb-4 text-[#5e503f]">The ECE department is dedicated to producing globally competent manpower for the ICT industry. With a strong foundation in theory and practical knowledge, students are prepared for postgraduate education and industry demands.</p>
+        <p class="text-[#5e503f] mb-4">Join our seminars, hackathons, and coding challenges to enhance your skills and network with professionals across the globe.</p>
+        <p class="font-bold text-lg">Contact: +1 234 567 890</p>
+      </div>
+      <!-- Placeholder for dynamically loaded content -->
+    </section>
+  </main>
+
+  <footer class="bg-[#0a0908] text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 PaaSsemble. All rights reserved.</p>
+    </div>
+  </footer>
+</section>
+  <script src="ecedeptevents-scripts.js"></script>
+</body>
+</html>

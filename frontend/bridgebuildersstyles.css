@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #4d3928; /* Match the background color */
+    color: #e6e6e6; /* Light text color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffe4c4; /* Light beige color */
+  }
+  
+  .event-card {
+    background-color: #24332e; /* Dark green card background */
+    border-radius: 8px;
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card .event-date {
+    background-color: #a67a5b; /* Brownish tag background */
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .event-details {
+    padding: 20px;
+  }
+  
+  .event-details h2 {
+    color: #ffdab9; /* Light peach */
+    font-size: 1.5rem;
+  }
+  
+  .event-details p {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #a67a5b; /* Match button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #875d43; /* Slightly darker brown */
+  }
+  
+  .event-details-page {
+    background-color: #24332e; /* Match event card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-details-page h2 {
+    color: #ffdab9; /* Light peach */
+    margin-bottom: 10px;
+  }
+  
+  .event-details-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .event-details-page ul li {
+    margin-bottom: 10px;
+  }
+  

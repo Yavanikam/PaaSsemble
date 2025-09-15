@@ -1,0 +1,252 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', cursive;
+}
+
+body {
+    background-color: #062223; /* Dark background for elegance */
+    color: #f7f4d1; /* Light text color for contrast */
+}
+
+/* Navigation Bar */
+header {
+    background-color: #062223; /* Darker shade for the navbar */
+    padding: 20px 40px; /* Increased padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .logo img {
+    width: 90px; /* Increased logo size */
+    margin-right: 15px;
+}
+
+.nav-links .logo span {
+    font-size: 32px; /* Increased logo name size */
+    font-weight: 700;
+    color: #4e9778; /* Light color for the logo */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 30px; /* Increased spacing between menu items */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #4e9778; /* Light color for links */
+    font-size: 22px; /* Increased menu item font size */
+    font-weight: 600;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #7ab37c; /* Color for underline effect */
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #7ab37c; /* Change color on hover */
+}
+
+.nav-links ul li a:hover:before {
+    width: 100%;
+}
+
+/* Video Section */
+.video-section {
+    width: 100%;
+    height: 100%; /* Adjusted video height */
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-section video {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0; /* Increased padding for more space */
+    background-color: #062223; /* Background color for categories */
+    text-align: center;
+}
+
+.category {
+    position: relative; /* Added for absolute positioning of the image */
+    background-color: #09302b; /* Light brown color for categories */
+    padding: 0; /* Removed padding to let the image fill the box */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 30%; /* Increased size of categories */
+    overflow: hidden; /* Ensure no overflow from the category box */
+}
+
+.category img {
+    width: 100%; /* Set image to fill the entire box */
+    height: 100%; /* Set image to fill the entire box */
+    object-fit: cover; /* Maintain aspect ratio of the image */
+}
+
+.category:hover {
+    transform: translateY(-10px);
+    background-color: #7ab37c; /* Change color on hover */
+}
+
+.category h2 {
+    position: absolute; /* Positioning the heading */
+    bottom: 80px; /* Adjust to position above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px; /* More spacing under headings */
+    font-size: 32px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    color: #0A0908; /* Dark text color for readability */
+}
+
+.action-btn {
+    position: absolute; /* Positioning the button */
+    bottom: 30px; /* Adjust to position above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px; /* Larger buttons */
+    font-size: 18px; /* Increased font size */
+    background-color: #09302b; /* Dark button color */
+    color: black; /* Light button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #7ab37c; /* Light brown hover effect */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px;
+    background-color: #062223; /*  background for about us */
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #f7f4d1; /* Light text color */
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #f7f4d1; /* Light text color */
+}
+
+/* Contact Us Section */
+body {
+  font-family: 'cursive', comic sans ms;
+  background-color: #062223;
+  color: #f7f4d1;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.location, .contact-people {
+  flex: 1;
+  padding: 20px;
+}
+
+.location h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.location p {
+  margin: 5px 0;
+}
+
+.contact-people {
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.person h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.person p {
+  margin-bottom: 10px;
+}
+
+.person a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.person a:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .contact-people {
+    padding: 10px;
+    text-align: center;
+  }
+}

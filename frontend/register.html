@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="registerstyles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="registrationForm" name="registrationForm">
+      <h2>Event Registration</h2>
+      
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+      <label for="contactNumber">Contact Number</label>
+      <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your contact number" required>
+      
+      <label for="event">Select Event</label>
+      <select id="event" name="event" required>
+        <option value="" disabled selected>Select an event</option>
+        <option value="event1">TechQuest</option>
+        <option value="event2">CodeCraze Hackathon</option>
+        <option value="event3">Bridge Builders Challenge</option>
+        <option value="event4">Engineer's Got Talent</option>
+        <option value="event5">Escape the Campus</option>
+      </select>
+      
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="registerscript.js"></script>
+</body>
+</html>

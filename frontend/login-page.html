@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup - College Events</title>
+  <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="form-container">
+      <div class="toggle-forms">
+        <button id="loginBtn" class="active">Login</button>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="form active">
+        <h2>Login to your account</h2>
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+        
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+        
+        <button type="submit">Login</button>
+        <p class="message">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signupForm" class="form">
+        <h2>Create a new account</h2>
+        
+        <!-- Added username field -->
+        <label for="signupUsername">Username</label>
+        <input type="text" id="signupUsername" placeholder="Enter your username" required>
+
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+        
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="Create a password" required>
+        
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        
+        <button type="submit">Sign Up</button>
+        <p class="message">Already have an account? <a href="#" id="showLogin">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="login-scripts.js"></script>
+</body>
+</html>
